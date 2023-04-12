@@ -41,6 +41,7 @@ let regex2 = /world/;
 #### 4 methods with `string`
 
 1. .match()
+
    ```js
    console.log(txt.match(regex1));
    // [
@@ -49,7 +50,11 @@ let regex2 = /world/;
    //   input: 'Programming courses always starts with a hello world example.',
    //   groups: undefined
    // ]
+
+   // if it's more than one
+   // ['hello', 'hello']
    ```
+
 2. .search()
    ```js
    console.log(txt.search(regex1)); // index
@@ -65,5 +70,45 @@ let regex2 = /world/;
    console.log(txt.split(regex1));
    // [ 'Programming courses always starts with a ', ' world example.' ]
    ```
+
+### 5. Understanding Regular Expression Flags
+
+```js
+let regex1 = new RegExp("hello", "i");
+let regex2 = /world/i;
+```
+
+- g : global, match more than one occurance.
+- i : case insensitive match, case doesn't matter
+- m : multi-line match
+
+#### if multiple matches
+
+- new RegExp().exec()
+
+  ```js
+  console.log(regex1.exec(txt)); // []
+  console.log(regex1.exec(txt)); // []
+  console.log(regex1.exec(txt)); // []
+  console.log(regex1.exec(txt)); // null
+
+  // it will return one by one indexed from the previous match
+  ```
+
+- "".match()
+
+  ```js
+  console.log(txt.match(regex1));
+  // [
+  //   'hello',
+  //   index: 41,
+  //   input: 'Programming courses always starts with a hello world example.',
+  //   groups: undefined
+  // ]
+
+  console.log(txt.match(regex1));
+  // when it's more than one
+  // ['hello', 'hello']
+  ```
 
 </details>
