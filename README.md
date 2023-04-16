@@ -180,3 +180,8 @@ let regex2 = /world/i;
 | \v        | vertival tab                                     |
 | \n        | new line, Match a LINE FEED, \u000A              |
 | \r        | carriage return, Match a CARRIAGE RETURN, \u000D |
+
+## After this course
+
+- Practice advanced regular expression
+- Find the way use it in termianl or for text files (and see how fast it is)
