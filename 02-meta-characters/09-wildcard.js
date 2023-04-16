@@ -3,4 +3,4 @@ t?`;
 
 const regex = /h.t/gs;
 
-console.log(txt.match(regex)); // true
+console.log(txt.match(regex));
