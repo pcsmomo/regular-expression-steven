@@ -51,7 +51,7 @@ let regex2 = /world/;
    //   groups: undefined
    // ]
 
-   // if it's more than one
+   // if with `g` flag
    // ['hello', 'hello']
    ```
 
