@@ -156,3 +156,16 @@ let regex2 = /world/i;
 | \W             | Matches any non-word character. This expression is equivalent to [^a-za-z0-9_].                                                                                                                                                                                        |
 | \z             | Matches only the end of a string.                                                                                                                                                                                                                                      |
 | \Z             | Matches only the end of a string, or before a newline character at the end.                                                                                                                                                                                            |
+
+### 10. The dotAll Flag, "s"
+
+[Regular Expression Flags](https://javascript.info/regexp-introduction#flags)
+
+| Flag | Description                                                                                                                                               |
+| ---- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| i    | With this flag the search is case-insensitive: no difference between A and a (see the example below).                                                     |
+| g    | With this flag the search looks for all matches, without it – only the first match is returned.                                                           |
+| m    | Multiline mode (covered in the chapter Multiline mode of anchors ^ $, flag "m").                                                                          |
+| s    | Enables “dotall” mode, that allows a dot . to match newline character \n (covered in the chapter Character classes).                                      |
+| u    | Enables full Unicode support. The flag enables correct processing of surrogate pairs. More about that in the chapter Unicode: flag "u" and class \p{...}. |
+| y    | “Sticky” mode: searching at the exact position in the text (covered in the chapter Sticky flag "y", searching at position).                               |
