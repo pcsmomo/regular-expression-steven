@@ -169,3 +169,14 @@ let regex2 = /world/i;
 | s    | Enables “dotall” mode, that allows a dot . to match newline character \n (covered in the chapter Character classes).                                      |
 | u    | Enables full Unicode support. The flag enables correct processing of surrogate pairs. More about that in the chapter Unicode: flag "u" and class \p{...}. |
 | y    | “Sticky” mode: searching at the exact position in the text (covered in the chapter Sticky flag "y", searching at position).                               |
+
+### 12. Matching Control Characters
+
+[Full list of control characters - IBM](https://www.ibm.com/docs/en/db2oc?topic=reference-regular-expression-control-characters)
+
+| Character | Description                                      |
+| --------- | ------------------------------------------------ |
+| \t        | tab, Match a HORIZONTAL TABULATION, \u0009       |
+| \v        | vertival tab                                     |
+| \n        | new line, Match a LINE FEED, \u000A              |
+| \r        | carriage return, Match a CARRIAGE RETURN, \u000D |
