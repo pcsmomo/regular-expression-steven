@@ -195,3 +195,20 @@ there's no metacharacters in character set except `-`
 ### 17. Excluding a Character Set : `^`
 
 And `^` targets after the caret
+
+### 18. Escaping Metacharacters in a Character Set
+
+#### Metacharacters you may need to escape
+
+`-`, `^`, `\`, `]`
+
+### 19. Using Shorthand for Character Sets
+
+| Character | Description   |
+| --------- | ------------- |
+| \d        | [0-9]         |
+| \w        | [a-zA-Z0-9_]  |
+| \s        | [\t\r\n]      |
+| \D        | [^0-9]        |
+| \W        | [^a-za-z0-9_] |
+| \S        | [^\t\r\n]     |
