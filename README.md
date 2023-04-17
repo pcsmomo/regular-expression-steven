@@ -185,3 +185,9 @@ let regex2 = /world/i;
 
 - Practice advanced regular expression
 - Find the way use it in termianl or for text files (and see how fast it is)
+
+## Section 3: Working with Character Sets
+
+### 15. Using Character Sets
+
+there's no metacharacters in character set except `-`
