@@ -191,3 +191,7 @@ let regex2 = /world/i;
 ### 15. Using Character Sets
 
 there's no metacharacters in character set except `-`
+
+### 17. Excluding a Character Set : `^`
+
+And `^` targets after the caret
