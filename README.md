@@ -204,6 +204,8 @@ And `^` targets after the caret
 
 ### 19. Using Shorthand for Character Sets
 
+[Shorthand Character Classes](https://www.regular-expressions.info/refshorthand.html)
+
 | Character | Description   |
 | --------- | ------------- |
 | \d        | [0-9]         |

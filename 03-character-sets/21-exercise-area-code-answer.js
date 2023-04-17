@@ -18,7 +18,7 @@ const phoneNums = [
   "801-778-665",
 ];
 
-const regex = /^801-/;
+const regex = /801-\d\d\d-\d\d\d\d$/;
 
 const filteredPhoneNums = phoneNums.filter((elem) => regex.test(elem));
 
