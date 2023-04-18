@@ -224,3 +224,18 @@ And `^` targets after the caret
 | +         | Matches one or more occurrences  |
 | ?         | Matches zero or one occurrences  |
 | \*        | Matches zero or more occurrences |
+
+### 23. Understanding Greediness and Laziness in Regular Expressions
+
+| Character | Description |
+| --------- | ----------- |
+| .\*       | Greediness  |
+| .\*?      | Laziness    |
+
+### 24. Specifying a Repetition Amount
+
+| Character  | Description                     |
+| ---------- | ------------------------------- |
+| {min, max} | Matches min to max occurrences  |
+| {min}      | Matches min occurrences         |
+| {min,}     | Matches min or more occurrences |
