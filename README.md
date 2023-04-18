@@ -214,3 +214,13 @@ And `^` targets after the caret
 | \D        | [^0-9]        |
 | \W        | [^a-za-z0-9_] |
 | \S        | [^\t\r\n]     |
+
+## Section 4: Using Repetition in Regular Expressions
+
+### 22. Using Repetition in Your Patterns
+
+| Character | Description                      |
+| --------- | -------------------------------- |
+| +         | Matches one or more occurrences  |
+| ?         | Matches zero or one occurrences  |
+| \*        | Matches zero or more occurrences |
