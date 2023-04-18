@@ -14,13 +14,19 @@ const r5 = /#[0-9A-F]{6}/gi;
 console.log(txt2.match(r5));
 
 // Select two types of hex numbers
-const txt4 = "#ff0000 #C0C0C0 #FFF #000 these are hex numbers";
+const txt4 = "#ff0000 #C0C0C0 #FFF #000 #FF00 these are hex numbers";
 const r8 = /#[0-9A-F]{6}|#[0-9A-F]{3}/gi;
 const r9 = /(#[0-9A-F]{6})|(#[0-9A-F]{3})/gi;
 const r10 = /#[0-9A-F]{3}|#[0-9A-F]{6}/gi; // it doesn't work. taking the first one
 console.log(txt4.match(r8));
 console.log(txt4.match(r9));
 console.log(txt4.match(r10));
+
+const txt5 = `#ff0000 #C0C0C0 #FFF #000 #FF00 these are hex numbers
+#F0F
+`;
+const r11 = /(#[0-9A-F]{6}|#[0-9A-F]{3})([^0-9A-F]|$)/gi;
+console.log(txt5.match(r11));
 
 // Social number
 const txt3 = "529-66-9898";
