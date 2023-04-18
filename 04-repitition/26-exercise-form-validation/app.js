@@ -7,3 +7,20 @@ Use several different phone numbers to test.
 
 HINT: You can use the keyup event to respond to entered text. There is a CSS Class for red and green.
 */
+
+const validateListener = () => {
+  const phone = document.getElementById("phone"),
+    phoneRegex = /\(?\d{3}\)?[-.]?\d{3}[-.]?\d{4}/;
+
+  phone.addEventListener("keyup", function () {
+    if (phoneRegex.test(phone.value)) {
+      phone.classList.remove("red");
+      phone.classList.add("green");
+    } else {
+      phone.classList.remove("green");
+      phone.classList.add("red");
+    }
+  });
+};
+
+validateListener();
