@@ -239,3 +239,12 @@ And `^` targets after the caret
 | {min, max} | Matches min to max occurrences  |
 | {min}      | Matches min occurrences         |
 | {min,}     | Matches min or more occurrences |
+
+## Section 5: Using Anchored Expressions
+
+### 29. Using Start and End Anchors
+
+| Character | Description                               |
+| --------- | ----------------------------------------- |
+| ^         | Anchor the match to the start of the line |
+| $         | Anchor the match to the end of the line   |
