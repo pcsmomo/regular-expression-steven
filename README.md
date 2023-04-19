@@ -248,3 +248,16 @@ And `^` targets after the caret
 | --------- | ----------------------------------------- |
 | ^         | Anchor the match to the start of the line |
 | $         | Anchor the match to the end of the line   |
+
+### 31. Working with Word Boundaries
+
+| Character | Description                                             |
+| --------- | ------------------------------------------------------- |
+| \b        | Word boundary - Pattern bounded by a non-word character |
+| \B        | Non-word boundary - Pattern bounded by a word character |
+
+- References position, not an actual character
+- Word characters: `\w` or [a-zA-Z0-9_]
+
+> `/\wplan/g` and `/\Bplan/g`\
+> `\w` includes the character, but `\B` doesn't include it
