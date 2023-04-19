@@ -261,3 +261,9 @@ And `^` targets after the caret
 
 > `/\wplan/g` and `/\Bplan/g`\
 > `\w` includes the character, but `\B` doesn't include it
+
+### 32. Writing Accurate Regular Expressions
+
+- When possible, define the quantity of repeated expression.
+- Narrow the scope of repeated expressions
+- Provide clear starting and ending points
