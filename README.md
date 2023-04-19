@@ -267,3 +267,10 @@ And `^` targets after the caret
 - When possible, define the quantity of repeated expression.
 - Narrow the scope of repeated expressions
 - Provide clear starting and ending points
+
+## Section 6: Working with Alternates and Groups
+
+### 35. Specifying Options
+
+- alternate: `|`
+- group: `()`
