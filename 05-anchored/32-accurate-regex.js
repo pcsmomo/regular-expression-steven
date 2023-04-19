@@ -1,5 +1,5 @@
 const txt1 = "84432"; // general post code
-const txt3 = "84432-4456"; // extended post code
+const txt2 = "84432-4456"; // extended post code
 
 const r1 = /.*/g; // it looks like working, but it matches everything
 const r2 = /[0-9]*/g;
@@ -14,3 +14,4 @@ console.log(txt1.match(r3));
 console.log(txt1.match(r4));
 console.log(txt1.match(r5));
 console.log(txt1.match(myAnswer));
+console.log(txt2.match(myAnswer));
