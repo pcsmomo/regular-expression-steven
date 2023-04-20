@@ -30,37 +30,49 @@ let regex2 = /world/;
 2. .exec()
    ```js
    console.log(regex1.exec(txt));
+   // 1. No group
    // [
    //   'hello',
    //   index: 41,
    //   input: 'Programming courses always starts with a hello world example.',
    //   groups: undefined
    // ]
+   //
+   // 2. When there's group like `/^(\d\d\d\d)[-./](\d{1,2})[-./](\d{1,2})$/`
+   // [
+   //    '2018/03/09',
+   //    '2018',
+   //    '03',
+   //    '09',
+   //    index: 0,
+   //    input: '2018/03/09',
+   //    groups: undefined
+   // ]
    ```
+   - if it has multiple matches, it only returns the first match (even with `g`, global flag)
 
 #### 4 methods with `string`
 
 1. .match()
-
    ```js
    console.log(txt.match(regex1));
+   // 1. without `g`, global flag -> detailed information
    // [
    //   'hello',
    //   index: 41,
    //   input: 'Programming courses always starts with a hello world example.',
    //   groups: undefined
    // ]
-
-   // if with `g` flag
+   //
+   // 2. with with `g` flag -> only matching words
    // ['hello', 'hello']
    ```
-
 2. .search()
    ```js
    console.log(txt.search(regex1)); // index
    // 41
    ```
-3. **.replace()** : often used
+3. **.replace()** : often used. doesn't change the original text
    ```js
    console.log(txt.replace(regex1, "hi"));
    // Programming courses always starts with a hi world example.
