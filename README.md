@@ -286,3 +286,18 @@ And `^` targets after the caret
 
 - alternate: `|`
 - group: `()`
+
+### 38. Understanding Capturing Groups
+
+```js
+/(yo)\1/; // \1 is a backreference to the first capturing group
+```
+
+| Character         | Description                                  | example                            |
+| ----------------- | -------------------------------------------- | ---------------------------------- |
+| \1 (after group)  | a backreference to the first capturing group | (yo)\1                             |
+| ?: (within group) | a non-capturing group                        | ^(?:\d\d\d\d)([-./])(\d{1,2})\1\2$ |
+
+> usecase of `?:`? \
+> when you already have a complicated regular expression with capturing groups\
+> and you want to use a group and don't want to break the rest of the expression
