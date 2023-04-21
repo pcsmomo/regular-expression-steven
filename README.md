@@ -293,10 +293,10 @@ And `^` targets after the caret
 /(yo)\1/; // \1 is a backreference to the first capturing group
 ```
 
-| Character         | Description                                  | example                            |
-| ----------------- | -------------------------------------------- | ---------------------------------- |
-| \1 (after group)  | a backreference to the first capturing group | (yo)\1                             |
-| ?: (within group) | a non-capturing group                        | ^(?:\d\d\d\d)([-./])(\d{1,2})\1\2$ |
+| Character         | Description                                  | example                              |
+| ----------------- | -------------------------------------------- | ------------------------------------ |
+| \1 (after group)  | a backreference to the first capturing group | /(yo)\1/                             |
+| ?: (within group) | a non-capturing group                        | /^(?:\d\d\d\d)([-./])(\d{1,2})\1\2$/ |
 
 > usecase of `?:`? \
 > when you already have a complicated regular expression with capturing groups\
@@ -306,4 +306,16 @@ And `^` targets after the caret
 
 ```js
 /<(<tag>\w*)>(.*?)<\/\k<tag>>/g;
+```
+
+### 41. Using Lookahead Groups
+
+| Character         | Description                                        | example        |
+| ----------------- | -------------------------------------------------- | -------------- |
+| ?= (within group) | a lookahead group which doesn't consume characters | /\w+(?=\.com)/ |
+
+```js
+// Useful example, Password validation
+const txt3 = "passwordA1";
+const r3 = /^(?=.{8,})(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9]).*$/g;
 ```
