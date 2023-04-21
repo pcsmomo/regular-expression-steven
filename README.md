@@ -319,3 +319,9 @@ And `^` targets after the caret
 const txt3 = "passwordA1";
 const r3 = /^(?=.{8,})(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9]).*$/g;
 ```
+
+### 42. Using Negative Lookahead Groups
+
+| Character         | Description                                                 | example        |
+| ----------------- | ----------------------------------------------------------- | -------------- |
+| ?! (within group) | a negative lookahead group which doesn't consume characters | /\w+(?!\.com)/ |
