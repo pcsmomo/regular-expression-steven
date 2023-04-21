@@ -301,3 +301,9 @@ And `^` targets after the caret
 > usecase of `?:`? \
 > when you already have a complicated regular expression with capturing groups\
 > and you want to use a group and don't want to break the rest of the expression
+
+### 40. Named Capture Groups
+
+```js
+/<(<tag>\w*)>(.*?)<\/\k<tag>>/g;
+```
