@@ -325,3 +325,10 @@ const r3 = /^(?=.{8,})(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9]).*$/g;
 | Character         | Description                                                 | example        |
 | ----------------- | ----------------------------------------------------------- | -------------- |
 | ?! (within group) | a negative lookahead group which doesn't consume characters | /\w+(?!\.com)/ |
+
+### 43. Using Lookbehind Groups
+
+| Character          | Description                                                                                                                 | example        |
+| ------------------ | --------------------------------------------------------------------------------------------------------------------------- | -------------- |
+| ?<= (within group) | a lookbehind group, which is similar but opposit to lookhead group\<br />(not all browsers are supporting lookbehind group) | /(?<=[$€])\d+/ |
+| ?<! (within group) | a negative lookbehind group                                                                                                 | /(?<![$€])\d+/ |
