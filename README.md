@@ -317,7 +317,8 @@ And `^` targets after the caret
 ```js
 // Useful example, Password validation
 const txt3 = "passwordA1";
-const r3 = /^(?=.{8,})(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9]).*$/g;
+const r3 =
+  /^(?=.{8,32})(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*[!"#$%&'()*+,\-./:;<=>?@[\\\]^_`{|}~]).*$/;
 ```
 
 ### 42. Using Negative Lookahead Groups
