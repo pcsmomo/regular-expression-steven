@@ -332,3 +332,15 @@ const r3 = /^(?=.{8,})(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9]).*$/g;
 | ------------------ | --------------------------------------------------------------------------------------------------------------------------- | -------------- |
 | ?<= (within group) | a lookbehind group, which is similar but opposit to lookhead group\<br />(not all browsers are supporting lookbehind group) | /(?<=[$€])\d+/ |
 | ?<! (within group) | a negative lookbehind group                                                                                                 | /(?<![$€])\d+/ |
+
+## Section 7: Working with Unicode
+
+### 47. Introducing Unicode
+
+| Character   | Description             |
+| ----------- | ----------------------- |
+| \u<Unicode> | Using unicode character |
+
+### 48. Using Unicode Characters
+
+[Unicode table](https://old.unicode-table.com/en/)
