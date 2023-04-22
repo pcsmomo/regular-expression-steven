@@ -351,3 +351,12 @@ const r3 =
 | Character | Description           | example      |
 | --------- | --------------------- | ------------ |
 | \u{1D11E} | ES6 unicode character | /\u{1D11E}/u |
+
+### 54. Using Replace with Regular Expressions
+
+- Select group position : `$1`
+
+```js
+"Smith, James".replace(/(\w+), (\w+)/, "$2 $1");
+// James Smith
+```
