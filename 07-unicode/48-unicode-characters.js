@@ -12,7 +12,7 @@ const r3 = /\u00A3/g;
 console.log(txt2.match(r3));
 
 const txt3 = "“Here is a quote”";
-const txt4 = "“Here is a quote”";
+const txt4 = '"Here is a quote"';
 
 const r4 = /[\u201c\u201d]/g;
 const r5 = /\u0022/g;

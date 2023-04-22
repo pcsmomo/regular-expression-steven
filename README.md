@@ -337,10 +337,16 @@ const r3 = /^(?=.{8,})(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9]).*$/g;
 
 ### 47. Introducing Unicode
 
-| Character   | Description             |
-| ----------- | ----------------------- |
-| \u<Unicode> | Using unicode character |
+| Character | Description             |
+| --------- | ----------------------- |
+| \u0061    | Using unicode character |
 
 ### 48. Using Unicode Characters
 
 [Unicode table](https://old.unicode-table.com/en/)
+
+### 49. Understanding ES6 Unicode Features
+
+| Character | Description           | example      |
+| --------- | --------------------- | ------------ |
+| \u{1D11E} | ES6 unicode character | /\u{1D11E}/u |
