@@ -305,7 +305,9 @@ And `^` targets after the caret
 ### 40. Named Capture Groups
 
 ```js
-/<(<tag>\w*)>(.*?)<\/\k<tag>>/g;
+// it is not supported by all browsers
+// and it will capture the tag name not the pattern itself
+/<(?<tag>\w*)>(.*?)<\/\k<tag>>/g;
 ```
 
 ### 41. Using Lookahead Groups
